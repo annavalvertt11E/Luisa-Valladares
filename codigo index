@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Luisa Valladares</title>
+    <link rel="icon" href="">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdf5f9; /* Rosa muy claro para el fondo */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #a855f7, #ec4899); /* Degradado morado a rosado */
+            color: white;
+        }
+
+        /* Sombra neón morada */
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #c084fc,
+                0 0 30px #a855f7,
+                0 0 40px #9333ea;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Clase .semana para tarjetas */
+        .semana {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: left;
+            box-shadow: 0 10px 20px rgba(168, 85, 247, 0.12);
+            border-left: 8px solid #ec4899; /* Borde rosa neón */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(236, 72, 153, 0.25);
+        }
+
+        .semana h2 {
+            margin-top: 0;
+            color: #7e22ce; /* Morado oscuro para títulos */
+        }
+
+        .semana p {
+            color: #4b5563;
+        }
+
+        /* Responsive para los videos e imágenes dentro de las tarjetas */
+        .video-bitacora, .contenedor-pdf embed, .contenedor-pdf img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 2px solid #a855f7;
+            background-color: #fbcfe8; /* Rosa suave */
+        }
+
+        /* Efecto Zoom en el logo */
+        footer img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+
+        span {
+            font-weight: bold;
+            color: #7e22ce; /* Texto morado en footer */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+
+    <main>
+        <!-- Semana 1: PDF interactivo -->
+        <div class="semana">
+            <h2>Semana 1</h2>
+            <p>Iniciamos con el proceso de programación y conocimos los conceptos básicos de Arduino y desarrollo web.</p>
+            <div class="contenedor-pdf">
+                <embed src="Recursos/img/recursos/ana daniela arduino.pdf"
+                       type="application/pdf"
+                       width="100%"
+                       height="600px" />
+            </div>
+        </div>
+
+        <!-- Semana 2: Imagen JPEG -->
+        <div class="semana">
+            <h2>Semana 2</h2>
+            <p>Agregamos estructura a nuestra página web y aprendimos a insertar imágenes e íconos.</p>
+            <div class="contenedor-pdf">
+                <img src="Recursos/img/recursos/semana2.jpeg" 
+                     alt="Trabajo de la Semana 2" />
+            </div>
+        </div>
+
+        <!-- Semana 3: Video -->
+        <div class="semana">
+            <h2>Semana 3</h2>
+            <p>Aprendimos a insertar archivos multimedia como videos y mejorar la presentación visual de la página.</p>
+            <video controls class="video-bitacora">
+                <source src="Recursos/img/recursos/introduccionrobotica.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+
+        <!-- Semana 4: Video -->
+        <div class="semana">
+            <h2>Semana 4</h2>
+            <p>Continuamos trabajando con proyectos avanzados y añadimos soporte multimedia adicional a la bitácora.</p>
+            <video controls class="video-bitacora">
+                <source src="Recursos/img/recursos/semana4.mov" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+
+        <!-- Semana 5: Video -->
+        <div class="semana">
+            <h2>Semana 5</h2>
+            <p>Continuamos trabajando con proyectos avanzados y aprendimos a armar circuitos más elaborados con una programación indicada.</p>
+            <video controls class="video-bitacora">
+                <source src="Recursos/img/recursos/semana5" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div> 
+
+        <!-- Semana 6: Video -->
+        <div class="semana">
+            <h2>Semana 6</h2>
+            <p>Aprendimos a usar un sensor ultrasónico, cuáles son sus funciones y qué tipo de programación es necesaria para utilizarlo.</p>
+            <video controls class="video-bitacora">
+                <source src="Recursos/img/recursos/semana6.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+
+        <!-- Semana 7: Video -->
+        <div class="semana">
+            <h2>Semana 7</h2>
+            <p>Aprendimos a usar el PIR y sus funciones.</p>
+            <video controls class="video-bitacora">
+                <source src="Recursos/img/recursos/semana7.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <span>@luisafervall</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio" height="50">
+    </footer>
+
+</body>
+</html>
