@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Luisa Valladares </title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2b262d; /* Fondo oscuro cálido */
+            color: #ffffff;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #7b526d; /* Rosado pastel oscuro */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffdae9; /* Rosado pastel claro */
+            font-weight: 600;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #3b3a4a; /* Gris con matiz celeste */
+        }
+
+        /* Título sin neón: Estilo limpio y plano en rosado pastel */
+        main h4 {
+            color: #ffc8dd;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: none; /* Sin brillo neón */
+            border-bottom: 2px solid rgba(255, 200, 221, 0.3);
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        /* Contenedor en cuadrícula para las 7 semanas */
+        .grid-semanas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        /* Estilo para cada tarjeta de semana */
+        .semana-card {
+            background-color: #2a2d34;
+            border: 2px solid #a2d2ff; /* Celeste pastel */
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .semana-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffafcc; /* Cambia a rosado pastel suave */
+            box-shadow: 0 6px 12px rgba(255, 175, 204, 0.25);
+        }
+
+        .semana-card h3 {
+            margin-top: 0;
+            color: #a2d2ff; /* Celeste pastel */
+            border-bottom: 1px solid rgba(255, 175, 204, 0.4);
+            padding-bottom: 8px;
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        /* Estilos para el visor de PDF */
+        .pdf-container {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Estilos para imágenes y videos */
+        .semana-card img, 
+        .semana-card video {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ffc8dd;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 2px solid #ffafcc; /* Borde rosado pastel */
+            background-color: #232a30; /* Celeste oscuro */
+        }
+
+        footer span {
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #a2d2ff; /* Texto celeste pastel */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+
+    <main>
+        <h4>Contenido Página WEB</h4>
+
+        <div class="grid-semanas">
+            <!-- Semana 1: PDF -->
+            <article class="semana-card">
+                <h3>Semana 1</h3>
+                <iframe src="IntroducciónArduino NADIE AGARRA MI PDF.pdf" class="pdf-container" title="PDF Semana 1"></iframe>
+            </article>
+
+            <!-- Semana 2: Foto -->
+            <article class="semana-card">
+                <h3>Semana 2</h3>
+                <img src="Image.jpg" alt="Imagen Semana 2">
+            </article>
+
+            <!-- Semana 3: Video -->
+            <article class="semana-card">
+                <h3>Semana 3</h3>
+                <video controls>
+                    <source src="IntroduccionA.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </article>
+
+            <!-- Semana 4: Video -->
+            <article class="semana-card">
+                <h3>Semana 4</h3>
+                <video controls>
+                    <source src="SEMANA 4.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </article>
+
+            <!-- Semana 5: Video -->
+            <article class="semana-card">
+                <h3>Semana 5</h3>
+                <video controls>
+                    <source src="SEMANA 5.mov" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </article>
+
+            <!-- Semana 6: Video -->
+            <article class="semana-card">
+                <h3>Semana 6</h3>
+                <video controls>
+                    <source src="Semana6A.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </article>
+
+            <!-- Semana 7: Video -->
+            <article class="semana-card">
+                <h3>Semana 7</h3>
+                <video controls>
+                    <source src="Semana7A.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <span>@luisafervall</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="25" width="100" alt="Logo Capouilliez">
+    </footer>
+
+</body>
+</html>
