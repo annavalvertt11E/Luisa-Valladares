@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora Luisa Valladares</title>
+    <title>Luisa Valladares</title>
     <link rel="icon" href="">
     <style>
         html, body {
             height: 100%;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fdf5f9; /* Rosa muy claro para el fondo */
+            background-color: #f4f4f9;
         }
 
         body {
@@ -21,21 +21,21 @@
 
         header {
             padding: 40px 20px;
-            background: linear-gradient(135deg, #a855f7, #ec4899); /* Degradado morado a rosado */
-            color: white;
+            background-color: #89e0e0; /* Aqua */
+            color: #75c4a9; /* Aquamarine */
         }
 
-        /* Sombra neón morada */
+        /* Instrucción 1: Sombra neón morada */
         h1 {
             font-size: 2.5rem;
             text-transform: uppercase;
-            color: #ffffff;
+            color: white;
             text-shadow:
                 0 0 5px #fff,
                 0 0 10px #fff,
-                0 0 20px #c084fc,
-                0 0 30px #a855f7,
-                0 0 40px #9333ea;
+                0 0 20px #bf00ff,
+                0 0 30px #bf00ff,
+                0 0 40px #bf00ff;
         }
 
         main {
@@ -43,41 +43,28 @@
             padding: 40px 20px;
             max-width: 900px;
             margin: 0 auto;
-            width: 100%;
-            box-sizing: border-box;
         }
 
-        /* Clase .semana para tarjetas */
+        /* El Reto: Clase .semana para tarjetas elegantes */
         .semana {
-            background-color: #ffffff;
+            background-color: white;
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 30px;
             text-align: left;
-            box-shadow: 0 10px 20px rgba(168, 85, 247, 0.12);
-            border-left: 8px solid #ec4899; /* Borde rosa neón */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-left: 8px solid #ec8ed6; /* Detalle en morado neón */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .semana:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(236, 72, 153, 0.25);
+            box-shadow: 0 15px 30px rgba(229, 107, 172, 0.2);
         }
 
         .semana h2 {
             margin-top: 0;
-            color: #7e22ce; /* Morado oscuro para títulos */
-        }
-
-        .semana p {
-            color: #4b5563;
-        }
-
-        /* Responsive para los videos e imágenes dentro de las tarjetas */
-        .video-bitacora, .contenedor-pdf embed, .contenedor-pdf img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 15px;
+            color: #333;
         }
 
         footer {
@@ -85,23 +72,23 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 50px;
-            border-top: 2px solid #a855f7;
-            background-color: #fbcfe8; /* Rosa suave */
+            border-top: 2px solid #d20ce9;
+            background-color: #f1b4d1;
         }
 
-        /* Efecto Zoom en el logo */
+        /* Instrucción 2: Efecto Zoom en el logo */
         footer img {
             transition: transform 0.3s ease;
             cursor: pointer;
         }
 
         footer img:hover {
-            transform: scale(1.2);
+            transform: scale(1.2); /* Aumenta un 20% el tamaño */
         }
 
         span {
             font-weight: bold;
-            color: #7e22ce; /* Texto morado en footer */
+            color: #555;
         }
     </style>
 </head>
@@ -111,7 +98,17 @@
         <h1>Bitácora Segunda y Tercera Unidad</h1>
     </header>
 
-    <main>
+
+
+
+
+      
+
+    
+
+
+
+    
         <!-- Semana 1: PDF interactivo -->
         <div class="semana">
             <h2>Semana 1</h2>
@@ -124,17 +121,20 @@
             </div>
         </div>
 
+    
         <!-- Semana 2: Imagen JPEG -->
         <div class="semana">
             <h2>Semana 2</h2>
             <p>Agregamos estructura a nuestra página web y aprendimos a insertar imágenes e íconos.</p>
             <div class="contenedor-pdf">
                 <img src="Recursos/img/recursos/semana2.jpeg" 
-                     alt="Trabajo de la Semana 2" />
+                     alt="Trabajo de la Semana 2" 
+                     style="width: 100%; height: auto;" />
             </div>
         </div>
 
-        <!-- Semana 3: Video -->
+    
+    <!-- Semana 3: Video -->
         <div class="semana">
             <h2>Semana 3</h2>
             <p>Aprendimos a insertar archivos multimedia como videos y mejorar la presentación visual de la página.</p>
@@ -143,8 +143,7 @@
                 Tu navegador no soporta la reproducción de este video.
             </video>
         </div>
-
-        <!-- Semana 4: Video -->
+    <!-- Semana 4: Video (Corregido y sin etiquetas de imagen rotas) -->
         <div class="semana">
             <h2>Semana 4</h2>
             <p>Continuamos trabajando con proyectos avanzados y añadimos soporte multimedia adicional a la bitácora.</p>
@@ -154,7 +153,7 @@
             </video>
         </div>
 
-        <!-- Semana 5: Video -->
+        <!-- Semana 5: Video (Antes duplicado como Semana 3, ahora corregido) -->
         <div class="semana">
             <h2>Semana 5</h2>
             <p>Continuamos trabajando con proyectos avanzados y aprendimos a armar circuitos más elaborados con una programación indicada.</p>
@@ -163,18 +162,21 @@
                 Tu navegador no soporta la reproducción de este video.
             </video>
         </div> 
+ <div>
 
-        <!-- Semana 6: Video -->
+        <!-- Semana 6: Video (Antes duplicado como Semana 3, ahora corregido) -->
         <div class="semana">
             <h2>Semana 6</h2>
-            <p>Aprendimos a usar un sensor ultrasónico, cuáles son sus funciones y qué tipo de programación es necesaria para utilizarlo.</p>
+            <p>Aprendimos a usar un sensor ultrasónico, cuales son sus funciones y que tipo de programación es necesaria para utilizarla.</p>
             <video controls class="video-bitacora">
                 <source src="Recursos/img/recursos/semana6.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de este video.
             </video>
         </div>
 
-        <!-- Semana 7: Video -->
+ <div>
+
+        <!-- Semana 7: Video (Antes duplicado como Semana 3, ahora corregido) -->
         <div class="semana">
             <h2>Semana 7</h2>
             <p>Aprendimos a usar el PIR y sus funciones.</p>
@@ -183,12 +185,34 @@
                 Tu navegador no soporta la reproducción de este video.
             </video>
         </div>
-    </main>
+
+
+
+
+
+
+
 
     <footer>
         <span>@luisafervall</span>
         <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio" height="50">
     </footer>
 
+
+    
+
+
+
+
+
+
+
+
+
+
+     
+
+
+     
 </body>
 </html>
